@@ -2,6 +2,9 @@ import numpy as np
 from scipy.odr import ODR, Model, Data, RealData
 import matplotlib.pyplot as plt
 
+#Sets font size to be used in graphs, feel free to change to whatever works
+plt.rcParams.update({'font.size': 20})
+
 def fit(data, model="linear", n=1, supress_plot=False, supress_output=False,
         title="Plot with fit", xlabel="x-axis", ylabel="y-axis"):
     '''
